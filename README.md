@@ -1,5 +1,6 @@
-# Getting Started with Create React App
+# My React GitHub Pages
 
+This repository is for studying React project (and displaying it on GitHub page)
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
