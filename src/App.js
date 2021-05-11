@@ -3,7 +3,8 @@ import { Route, Switch, Link } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import About from "./pages/About";
 import Home from "./pages/Home";
-import Contact from "./pages/Contact";
+import Todo from "./pages/Todo";
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 function App() {
   return (
@@ -15,8 +16,8 @@ function App() {
         <Route path="/about">
           <About />
         </Route>
-        <Route path="/contact">
-          <Contact />
+        <Route path="/Todo">
+          <Todo />
         </Route>
       </Switch>
     </Layout>
