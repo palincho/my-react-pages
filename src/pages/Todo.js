@@ -3,14 +3,6 @@ import { useState } from "react";
 import TodoList from "../components/todos/TodoList";
 import TodoForm from "../components/todos/TodoForm";
 
-const DUMMY_TODO_LIST = [
-  {
-    id: 1,
-    title: "dummy title",
-    description: "dummy desc"
-  }
-];
-
 const Todo = () => {
   const [todos, setTodos] = useState([]);
 
