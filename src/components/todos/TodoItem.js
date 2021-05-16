@@ -3,8 +3,11 @@ import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
 
 function TodoItem(props) {
+  const divStyle = {
+    color: "black",
+  };
   return (
-    <Card>
+    <div style={divStyle}>
       <Modal.Dialog>
         <Modal.Header closeButton>
           <Modal.Title>{props.title}</Modal.Title>
@@ -20,7 +23,7 @@ function TodoItem(props) {
           <Button variant="primary">Done</Button>
         </Modal.Footer>
       </Modal.Dialog>
-    </Card>
+    </div>
   );
 }
 

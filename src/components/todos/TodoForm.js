@@ -1,5 +1,4 @@
 import { useRef } from "react";
-import Card from "../ui/Card";
 import Form from "react-bootstrap/Form";
 import Button from "react-bootstrap/Button";
 
@@ -15,14 +14,16 @@ function TodoForm(props) {
 
     const todoData = {
       title: enteredTitle,
-      desc: enteredDesc,
+      description: enteredDesc,
+      id: Math.random().toString()
     };
 
     console.log(todoData);
+    props.onAddTodo(todoData);
   }
 
   return (
-    <Form>
+    <Form onSubmit={submitHandler}>
       <Form.Group controlId="formTitle">
         <Form.Label>Title</Form.Label>
         <Form.Control
